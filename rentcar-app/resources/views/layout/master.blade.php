@@ -32,10 +32,10 @@
           <!-- partial -->
           <div class="main-panel">
             <div class="content-wrapper">
-          @yield('isi')
-            </div>
+              <div class="container">
+                @yield('isi')
+              </div>
           </div>
-          <!-- main-panel ends -->
         </div>
         <!-- page-body-wrapper ends -->
         </div>
