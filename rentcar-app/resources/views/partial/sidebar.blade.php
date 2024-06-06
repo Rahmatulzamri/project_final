@@ -66,7 +66,7 @@
           </a>
       </li>
       <li class="nav-item menu-items">
-        <a class="nav-link" href="/bookcar">
+        <a class="nav-link" href="/merek">
             <span class="menu-icon">
                 <i class="mdi mdi-car"></i>
             </span>
