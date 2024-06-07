@@ -8,6 +8,7 @@ use App\Http\Controllers\BookcarController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\merekController;
 use App\Http\Controllers\pelangganController;
+use App\Http\Controllers\PenggunaController;
 
 Route::get('/', function () {
     return view('dashboard');
@@ -30,9 +31,16 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view ('login.register');
 });
+Route::get('/sidebar', function () {
+    return view ('user.haluser');
+});
 
 Route::resource('/pelanggan', pelangganController::class );
 Route::get('/pelanggan/{id}/edit', [pelangganController::class, 'edit'])->name('pelanggan.edit');
 Route::get('/pelanggan/{id}/show', [pelangganController::class, 'show'])->name('pelanggan.show');
+
+Route::get('/pengguna', [PenggunaController::class, 'index']);
+
+
 
 
