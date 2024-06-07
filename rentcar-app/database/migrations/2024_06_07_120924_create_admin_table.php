@@ -11,12 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('booking', function (Blueprint $table) {
+        Schema::create('admin', function (Blueprint $table) {
             $table->id();
-            $table->string('tanggal_mulai');
-            $table->string('tanggal_selesai');
-            $table->string('status_booking');
-            $table->string('bookingcol');
+            $table->string('nama');
+            $table->string('email');
+            $table->string('password');
             $table->timestamps();
         });
     }
@@ -26,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('booking_tabel');
+        Schema::dropIfExists('admin');
     }
 };
