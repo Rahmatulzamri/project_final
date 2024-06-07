@@ -9,9 +9,9 @@
       <form class="forms-sample">
         <div class="form-group">
           <label></label>
-          <input name="nama_merek" type="text" value="{{$merk->nama_merek}}" class="form-control">
+          <input name="nama" type="text" value="{{$merk->nama}}" class="form-control">
         </div>
-        @error('nama_merek')
+        @error('nama')
         <div class="text-danger">{{ $message }}</div>
         @enderror
         <button href="{{ route('merek.index') }}"  type="submit" class="btn btn-primary mr-2">Submit</button>

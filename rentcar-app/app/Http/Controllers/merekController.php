@@ -31,11 +31,11 @@ class merekController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nama_merek' => 'required',
+            'nama' => 'required',
         ]);
 
         $merk = new merek;
-        $merk->nama_merek = $request->input('nama_merek');
+        $merk->nama = $request->input('nama');
         $merk->save();
 
         
@@ -67,13 +67,13 @@ class merekController extends Controller
     {
     
         $request->validate([
-            'nama_merek' => 'required',
+            'nama' => 'required',
         ]);    
 
         merek::where('id',$id)
         ->update(
             [
-                'nama_merek' => $request->input('nama_merek'),
+                'nama' => $request->input('nama'),
             ]
             );
         return redirect('/merek');

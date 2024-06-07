@@ -3,6 +3,9 @@
 @section('isi')
     <div class="container">
         <h1>Booking Mobil</h1>
+        <p class="card-description">
+            <a href="/booking/create"><button class="btn btn-primary">Tambah data</button></a>
+          </p>
         <table class="table">
             <thead>
                 <tr>

@@ -4,7 +4,7 @@
     <div class="card-body">
       <h4 class="card-title">Tabel Booking</h4>
       <p class="card-description">
-        <a href="//booking"><button class="btn btn-primary">Tambah data</button></a>
+        <a href="/booking/create"><button class="btn btn-primary">Tambah data</button></a>
       </p>
       <div class="table-responsive">
         <table class="table table-striped">

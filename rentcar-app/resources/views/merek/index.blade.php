@@ -19,7 +19,7 @@
             @foreach ($merk  as $key=>$item)
             <tr>
               <td> {{$key+1}} </td>
-              <td> {{$item->nama_merek}} </td>
+              <td> {{$item->nama}} </td>
               <td>
                   <form action="/merek/{{$item->id}}" method="POST">
                     <a href="/merek/{{$item->id}}/edit" class="btn btn-warning btn-sm">Edit</a>
