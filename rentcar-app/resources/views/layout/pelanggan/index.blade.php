@@ -25,9 +25,9 @@
             <tr>
               <td> {{$key+1}} </td>
               <td> {{$item->nama}} </td>
-              <td> {{$item->alamat}} </td>
               <td> {{$item->no_telpon}} </td>
               <td> {{$item->email}} </td>
+              <td> {{$item->alamat}} </td>
               <td> {{$item->no_sim}} </td>
               <td> {{$item->nik}} </td>
               <td>

@@ -11,6 +11,6 @@ class pelanggan extends Model
 
     protected $table='pelanggan';
 
-    protected $fillable=['nama', 'alamat', 'no_telpon', 'email', 'no_sim'];
+    protected $fillable=['nama', 'alamat', 'no_telpon', 'email', 'no_sim','nik'];
 
 }
