@@ -1,4 +1,5 @@
-# Final Project
+# Final Project Bootcamp
+SanberCode X Universitas Lancang Kuning
 
 ## Kelompok 13
 
