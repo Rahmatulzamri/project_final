@@ -9,10 +9,14 @@ class Mobil extends Model
 {
     use HasFactory;
 
+    protected $table='mobil';
+
+    protected $fillable=['id','merek','tahun','warna','no_pol','status'];
+
     /**
      * Get the merek that owns the mobil.
      */
-    public function merek()
+    public function mobil()
     {
         return $this->belongsTo(MerekMobil::class, 'id_merek');
     }

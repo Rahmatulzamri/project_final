@@ -73,6 +73,14 @@
             <span class="menu-title">Merek Mobil</span>
         </a>
     </li>  
+    <li class="nav-item menu-items">
+        <a class="nav-link" href="/mobil">
+            <span class="menu-icon">
+                <i class="mdi mdi-car"></i>
+            </span>
+            <span class="menu-title">Stok Mobil</span>
+        </a>
+    </li>  
       <li class="nav-item menu-items">
           <a class="nav-link" href="/pelanggan">
               <span class="menu-icon">
