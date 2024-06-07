@@ -16,6 +16,7 @@
               <th> No Telepon </th>
               <th> Email </th>
               <th> No Sim </th>
+              <th> No KTP </th>
               <th> Aksi </th>
             </tr>
           </thead>
@@ -28,6 +29,7 @@
               <td> {{$item->no_telpon}} </td>
               <td> {{$item->email}} </td>
               <td> {{$item->no_sim}} </td>
+              <td> {{$item->nik}} </td>
               <td>
                   <form action="/pelanggan/{{$item->id}}" method="POST">
                     <a href="{{route('pelanggan.show', $item->id)}}" class="btn btn-info btn-sm">Detail</a>

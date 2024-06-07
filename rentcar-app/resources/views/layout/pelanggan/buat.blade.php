@@ -26,6 +26,10 @@
             <label>No Sim</label>
             <input name="no_sim" type="text" class="form-control" placeholder="masukkan No Sim pelanggan">
           </div>
+          <div class="form-group">
+            <label>No KTP</label>
+            <input name="nik" type="text" class="form-control" placeholder="masukkan No KTP (NIK) pelanggan">
+          </div>
 
         
         <button href="{{ route('pelanggan.index') }}"  type="submit" class="btn btn-primary mr-2">Submit</button>

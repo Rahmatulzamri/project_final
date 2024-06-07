@@ -27,6 +27,10 @@
           <label></label>
           <input name="no_sim" type="text" value="{{$pembeli->no_sim}}" class="form-control">
         </div>
+        <div class="form-group">
+          <label></label>
+          <input name="nik" type="text" value="{{$pembeli->nik}}" class="form-control">
+        </div>
         @error('nama')
         <div class="text-danger">{{ $message }}</div>
         @enderror

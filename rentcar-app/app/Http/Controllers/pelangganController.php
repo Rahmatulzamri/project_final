@@ -36,6 +36,7 @@ class pelangganController extends Controller
             'no_telpon' => 'required',
             'email' => 'required',
             'no_sim' => 'required',
+            'nik' => 'required',
 
         ]);
 
@@ -45,6 +46,7 @@ class pelangganController extends Controller
         $pembeli->no_telpon = $request->input('no_telpon');
         $pembeli->email = $request->input('email');
         $pembeli->no_sim = $request->input('no_sim');
+        $pembeli->nik = $request->input('nik');
         $pembeli->save();
 
         
