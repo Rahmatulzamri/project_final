@@ -11,6 +11,6 @@ class merek extends Model
 
     protected $table='merek';
 
-    protected $fillable=['nama_merek'];
+    protected $fillable=['nama'];
 
 }

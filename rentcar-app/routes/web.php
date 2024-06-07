@@ -19,6 +19,10 @@ Route::get('/booking', [BookingController::class, 'index'])->name('booking');
 Route::get('/reservasi', [ReservasiController::class, 'index'])->name('reservasi');
 Route::resource('/merek', merekController::class);
 
+Route::get('/mobil', function () {
+    return view ('mobil.index');
+});
+
 
 Route::get('/login', function () {
     return view ('login.login');
