@@ -74,11 +74,11 @@
         </a>
     </li>  
       <li class="nav-item menu-items">
-          <a class="nav-link" href="/booking">
+          <a class="nav-link" href="/pelanggan">
               <span class="menu-icon">
                   <i class="mdi mdi-view-list"></i>
               </span>
-              <span class="menu-title">View Bookings</span>
+              <span class="menu-title">pelangan</span>
           </a>
       </li>
       <li class="nav-item menu-items">
