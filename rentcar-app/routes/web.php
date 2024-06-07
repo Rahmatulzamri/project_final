@@ -17,7 +17,18 @@ Route::get('/bookcar', [BookcarController::class, 'index'])->name('bookcar');
 Route::get('/booking', [BookingController::class, 'index'])->name('booking');
 Route::get('/reservasi', [ReservasiController::class, 'index'])->name('reservasi');
 Route::resource('/merek', merekController::class);
+
+
+Route::get('/login', function () {
+    return view ('login.login');
+});
+
+Route::get('/register', function () {
+    return view ('login.register');
+});
+
 Route::resource('/pelanggan', pelangganController::class );
 Route::get('/pelanggan/{id}/edit', [pelangganController::class, 'edit'])->name('pelanggan.edit');
 Route::get('/pelanggan/{id}/show', [pelangganController::class, 'show'])->name('pelanggan.show');
+
 
