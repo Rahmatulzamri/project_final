@@ -7,5 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 
 class booking extends Model
 {
-    protected $fillable = ['name', 'email', 'phone', 'car', 'pickup', 'dropoff'];
+    use HasFactory;
+
+    protected $table = 'booking';
+
+    protected $fillable = ['id', 'tanggal_mulai','tanggal_selesai', 'total_harga', 'total_denda', 'status', 'dropoff'];
 }

@@ -70,7 +70,7 @@
             <span class="menu-icon">
                 <i class="mdi mdi-car"></i>
             </span>
-            <span class="menu-title">Book a Car</span>
+            <span class="menu-title">Merek Mobil</span>
         </a>
     </li>  
       <li class="nav-item menu-items">
@@ -90,7 +90,7 @@
           </a>
       </li>
       <li class="nav-item menu-items">
-        <a class="nav-link" href="/reservasi">
+        <a class="nav-link" href="/booking">
             <span class="menu-icon">
                 <i class="mdi mdi-calendar-multiple-check"></i>
             </span>
