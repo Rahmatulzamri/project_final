@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use Illuminate\Support\Facades\Validator;
 use Illuminate\Http\Request;
 use App\Models\pelanggan;
 
@@ -30,24 +30,17 @@ class pelangganController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
+        $validateData=$request->validate([
             'nama' => 'required',
-            'alamat' => 'required',
             'no_telpon' => 'required',
             'email' => 'required',
+            'alamat' => 'required',
             'no_sim' => 'required',
             'nik' => 'required',
 
         ]);
 
-        $pembeli = new pelanggan;
-        $pembeli->nama = $request->input('nama');
-        $pembeli->alamat = $request->input('alamat');
-        $pembeli->no_telpon = $request->input('no_telpon');
-        $pembeli->email = $request->input('email');
-        $pembeli->no_sim = $request->input('no_sim');
-        $pembeli->nik = $request->input('nik');
-        $pembeli->save();
+    pelanggan::create($validateData);
 
         
         return redirect()->route('pelanggan.index')->with('success', 'jenis pelanggan berhasil disimpan.');
@@ -81,20 +74,22 @@ class pelangganController extends Controller
     
         $request->validate([
             'nama' => 'required',
-            'alamat' => 'required',
             'no_telpon' => 'required',
             'email' => 'required',
+            'alamat' => 'required',
             'no_sim' => 'required',
+            'nik' => 'required',
         ]);    
 
         pelanggan::where('id',$id)
         ->update(
             [
                 'nama' => $request->input('nama'),
-                'alamat' => $request->input('alamat'),
                 'no_telpon' => $request->input('no_telpon'),
                 'email' => $request->input('email'),
+                'alamat' => $request->input('alamat'),
                 'no_sim' => $request->input('no_sim'),
+                'nik' => $request->input('nik'),
             ]
             );
         return redirect('/pelanggan');

@@ -13,15 +13,15 @@
         </div>
         <div class="form-group">
           <label></label>
-          <input name="alamat" type="text" value="{{$pembeli->alamat}}" class="form-control">
-        </div>
-        <div class="form-group">
-          <label></label>
           <input name="no_telpon" type="text" value="{{$pembeli->no_telpon}}" class="form-control">
         </div>
         <div class="form-group">
           <label></label>
           <input name="email" type="text" value="{{$pembeli->email}}" class="form-control">
+        </div>
+        <div class="form-group">
+          <label></label>
+          <input name="alamat" type="text" value="{{$pembeli->alamat}}" class="form-control">
         </div>
         <div class="form-group">
           <label></label>
@@ -35,7 +35,7 @@
         <div class="text-danger">{{ $message }}</div>
         @enderror
         <button href="{{ route('pelanggan.index') }}"  type="submit" class="btn btn-primary mr-2">Submit</button>
-        <button class="btn btn-dark">Cancel</button>
+        <button class="btn btn-secondary mr-2">Cancel</button>
       </form>
     </div>
   </div>

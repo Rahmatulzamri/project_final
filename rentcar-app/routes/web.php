@@ -32,8 +32,11 @@ Route::get('/sidebar', function () {
 });
 
 Route::resource('/pelanggan', pelangganController::class );
-Route::get('/pelanggan/{id}/edit', [pelangganController::class, 'edit'])->name('pelanggan.edit');
-Route::get('/pelanggan/{id}/show', [pelangganController::class, 'show'])->name('pelanggan.show');
+// Route::get('/pelanggan/{id}/edit', [pelangganController::class, 'edit'])->name('pelanggan.edit');
+// Route::get('/pelanggan/{id}/show', [pelangganController::class, 'show'])->name('pelanggan.show');
+// Route::get('/pelanggan/create', [pelangganController::class, 'create'])->name('pelanggan.create');
+// Route::post('/pelanggan', [pelangganController::class, 'store'])->name('pelanggan.store');
+// Route::get('/pelanggan', [pelangganController::class, 'index'])->name('pelanggan.index');
 
 Route::get('/pengguna', [PenggunaController::class, 'index']);
 
