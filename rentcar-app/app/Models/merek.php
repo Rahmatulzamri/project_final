@@ -9,7 +9,7 @@ class merek extends Model
 {
     use HasFactory;
 
-    protected $table='merek_mobil';
+    protected $table='merek';
 
     protected $fillable=['nama_merek'];
 
