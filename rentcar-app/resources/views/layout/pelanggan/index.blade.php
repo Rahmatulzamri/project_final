@@ -12,11 +12,11 @@
             <tr>
               <th> No </th>
               <th> Nama </th>
-              <th> Alamat </th>
               <th> No Telepon </th>
               <th> Email </th>
+              <th> Alamat </th>
               <th> No Sim </th>
-              <th> No KTP </th>
+              <th> No KTP/NIK </th>
               <th> Aksi </th>
             </tr>
           </thead>

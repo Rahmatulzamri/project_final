@@ -4,84 +4,86 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\booking;
+use App\Models\admin;
+use App\Models\pelanggan;
 
-class bookingController extends Controller
+class BookingController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     */
     public function index()
     {   
-        $merk=booking::all();
-        return view('booking.index', compact('merk'));
+        $booking = booking::all();
+        return view('booking.index', compact('booking'));
     }
 
-
-    /**
-     * Show the form for creating a new resource.
-     */
     public function create()
     {
-        return view('booking.create');
+        $admin = admin::all();
+        $pelanggan = pelanggan::all();
+        return view('booking.create', compact('admin', 'pelanggan'));
     }
 
-    /**
-     * Store a newly created resource in storage.
-     */
     public function store(Request $request)
     {
         $request->validate([
-            'nama' => 'required',
+            'tanggal_mulai' => 'required',
+            'tanggal_selesai' => 'required',
+            'total_harga' => 'required',
+            'total_denda' => 'required',
+            'status' => 'required',
+            'pelanggan_id' => 'required',
+            'admin_id' => 'required',
         ]);
-
-        $merk = new booking;
-        $merk->nama = $request->input('nama');
-        $merk->save();
-
         
-        return redirect()->route('booking.index')->with('success', 'booking mobil berhasil disimpan.');
+
+        booking::create($request->all());
+
+        return redirect()->route('booking.index')
+                         ->with('success', 'booking created successfully.');
     }
 
-    /**
-     * Display the specified resource.
-     */
     public function show(string $id)
     {
         //
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     */
     public function edit(string $id)
     {
-        $merk = booking::find($id);
+        $booking = booking::find($id);
 
-        return view('booking.update', ['merk' => $merk]);
+        $admin = admin::all();
+        $pelanggan = pelanggan::all();
+
+        return view('booking.update', ['booking' => $booking], compact('admin','pelanggan'));
     }
 
-    /**
-     * Update the specified resource in storage.
-     */
     public function update(Request $request, string $id)
     {
-    
         $request->validate([
-            'nama' => 'required',
-        ]);    
-
-        booking::where('id',$id)
-        ->update(
-            [
-                'nama' => $request->input('nama'),
-            ]
+            'tanggal_mulai' => 'required',
+            'tanggal_selesai' => 'required',
+            'total_harga' => 'required',
+            'total_denda' => 'required',
+            'status' => 'required',
+            'pelanggan_id' => 'required|exists:pelanggan,id',
+            'admin_id' => 'required|exists:admin,id',
+        ]);
+    
+        booking::where('id', $id)
+            ->update(
+                [
+                    'tanggal_mulai' => $request->input('tanggal_mulai'),
+                    'tanggal_selesai' => $request->input('tanggal_selesai'),
+                    'total_harga' => $request->input('total_harga'),
+                    'total_denda' => $request->input('total_denda'),
+                    'status' => $request->input('status'),
+                    'pelanggan_id' => $request->input('pelanggan_id'),
+                    'admin_id' => $request->input('admin_id'),
+                ]
             );
+    
         return redirect('/booking');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     */
     public function destroy(string $id)
     {
         booking::where('id',$id)->delete();

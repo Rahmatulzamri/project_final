@@ -2,39 +2,53 @@
 @section('isi')
 <div class="card">
     <div class="card-body">
-      <h4 class="card-title">Tabel Create</h4>
-      <form action="{{ route('booking.store') }}" method="POST" class="forms-sample">
-        @csrf
-      <form class="forms-sample">
-        <div class="form-group">
-          <label>Nama</label>
-          <input name="nama" type="text" class="form-control" placeholder="masukkan nama pelanggan">
-        </div>
-        <div class="form-group">
-            <label>Alamat</label>
-            <input name="alamat" type="text" class="form-control" placeholder="masukkan alamat pelanggan">
-          </div>
-          <div class="form-group">
-            <label>No Telepon</label>
-            <input name="no_telpon" type="text" class="form-control" placeholder="masukkan no Telepon pelanggan">
-          </div>
-          <div class="form-group">
-            <label>Email</label>
-            <input name="email" type="text" class="form-control" placeholder="masukkan email pelanggan">
-          </div>
-          <div class="form-group">
-            <label>No Sim</label>
-            <input name="no_sim" type="text" class="form-control" placeholder="masukkan No Sim pelanggan">
-          </div>
-          <div class="form-group">
-            <label>No KTP</label>
-            <input name="nik" type="text" class="form-control" placeholder="masukkan No KTP (NIK) pelanggan">
-          </div>
-
-        
-        <button href="{{ route('booking.index') }}"  type="submit" class="btn btn-primary mr-2">Submit</button>
-        <button class="btn btn-dark">Cancel</button>
-      </form>
+        <h4 class="card-title">Tabel Create</h4>
+        <form action="{{ route('booking.store') }}" method="POST" class="forms-sample">
+            @csrf
+            <div class="form-group">
+                <label>Tanggal Mulai</label>
+                <input name="tanggal_mulai" type="date" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Tanggal Selesai</label>
+                <input name="tanggal_selesai" type="date" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Total Harga</label>
+                <input name="total_harga" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Total Denda</label>
+                <input name="total_denda" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Status</label>
+                <input name="status" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+                <label>Pelanggan</label>
+                <select name="pelanggan_id" class="form-control">
+                    <option value="">Pilih Pelanggan</option>
+                    @foreach($pelanggan as $p)
+                        <option value="{{ $p->id }}">{{ $p->nama }}</option>
+                    @endforeach
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Admin</label>
+                <select name="admin_id" class="form-control">
+                    <option value="">Pilih Admin</option>
+                    @foreach($admin as $a)
+                        <option value="{{ $a->id }}">{{ $a->nama }}</option>
+                    @endforeach
+                </select>
+            </div>
+            @error('tanggal_mulai')
+            <div class="text-danger">{{ $message }}</div>
+            @enderror
+            <button type="submit" class="btn btn-primary mr-2">Submit</button>
+            <button type="button" class="btn btn-dark">Cancel</button>
+        </form>
     </div>
-  </div>
+</div>
 @endsection

@@ -8,27 +8,27 @@
         @method('put')
       <form class="forms-sample">
         <div class="form-group">
-          <label></label>
+          <label>Nama</label>
           <input name="nama" type="text" value="{{$pembeli->nama}}" class="form-control">
         </div>
         <div class="form-group">
-          <label></label>
+          <label>No. Telepon</label>
           <input name="no_telpon" type="text" value="{{$pembeli->no_telpon}}" class="form-control">
         </div>
         <div class="form-group">
-          <label></label>
+          <label>Email</label>
           <input name="email" type="text" value="{{$pembeli->email}}" class="form-control">
         </div>
         <div class="form-group">
-          <label></label>
+          <label>Alamat</label>
           <input name="alamat" type="text" value="{{$pembeli->alamat}}" class="form-control">
         </div>
         <div class="form-group">
-          <label></label>
+          <label>No. SIM</label>
           <input name="no_sim" type="text" value="{{$pembeli->no_sim}}" class="form-control">
         </div>
         <div class="form-group">
-          <label></label>
+          <label>NIK</label>
           <input name="nik" type="text" value="{{$pembeli->nik}}" class="form-control">
         </div>
         @error('nama')

@@ -74,8 +74,8 @@ class pelangganController extends Controller
     
         $request->validate([
             'nama' => 'required',
-            'no_telpon' => 'required',
             'email' => 'required',
+            'no_telpon' => 'required',
             'alamat' => 'required',
             'no_sim' => 'required',
             'nik' => 'required',

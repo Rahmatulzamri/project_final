@@ -82,7 +82,7 @@
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="#">
+            <a class="nav-link" href="/booking">
                 <span class="menu-icon">
                     <i class="mdi mdi-calendar-multiple-check"></i>
                 </span>
@@ -90,11 +90,11 @@
             </a>
         </li>
         <li class="nav-item menu-items">
-            <a class="nav-link" href="/reservasi">
+            <a class="nav-link" href="/administrator">
                 <span class="menu-icon">
-                    <i class="mdi mdi-calendar-multiple-check"></i>
+                    <i class="mdi mdi-account"></i>
                 </span>
-                <span class="menu-title">Reservasi</span>
+                <span class="menu-title">Admin</span>
             </a>
         </li>
         <li class="nav-item menu-items">
