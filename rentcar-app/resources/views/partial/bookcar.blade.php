@@ -1,62 +1,87 @@
-@extends('layout.master')
-
-@section('isi')
-<div class="row">
-    <div class="col-md-4 mb-4">
-        <div class="card">
-            <!-- Gambar mobil -->
-            <img src="https://www.supercars.net/blog/wp-content/uploads/2016/08/maxresdefault-13.jpg" class="card-img-top" alt="Car Image">
-            <div class="card-body">
-                <!-- Informasi harga sewa mobil -->
-                <h5 class="card-title">Sedan</h5>
-                <p class="card-text">Harga Sewa: $100/hari</p>
-                <!-- Tombol-tombol aksi -->
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <a href="#" class="btn btn-primary">Detail</a>
-                    <a href="#" class="btn btn-danger">Edit</a>
-                    <a href="#" class="btn btn-danger">Delete</a>
-                    <a href="#" class="btn btn-danger">Upload</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-4 mb-4">
-        <div class="card">
-            <!-- Gambar mobil -->
-            <img src="https://img-ik.cars.co.za/news-site-za/images/2015/11/DSC_1413.jpg" class="card-img-top" alt="Car Image">
-            <div class="card-body">
-                <!-- Informasi harga sewa mobil -->
-                <h5 class="card-title">Pajero</h5>
-                <p class="card-text">Harga Sewa: $100/hari</p>
-                <!-- Tombol-tombol aksi -->
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <a href="#" class="btn btn-primary">Detail</a>
-                    <a href="#" class="btn btn-danger">Edit</a>
-                    <a href="#" class="btn btn-danger">Delete</a>
-                    <a href="#" class="btn btn-danger">Upload</a>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="col-md-4 mb-4">
-        <div class="card">
-            <!-- Gambar mobil -->
-            <img src="https://th.bing.com/th/id/OIP.AIqbUtg_YbRMaCGrBLZ3tgHaE7?w=288&h=191&c=7&r=0&o=5&dpr=1.3&pid=1.7" class="card-img-top" alt="Car Image">
-            <div class="card-body">
-                <!-- Informasi harga sewa mobil -->
-                <h5 class="card-title">Honda Brio</h5>
-                <p class="card-text">Harga Sewa: $100/hari</p>
-                <!-- Tombol-tombol aksi -->
-                <div class="btn-group" role="group" aria-label="Basic example">
-                    <a href="#" class="btn btn-primary">Detail</a>
-                    <a href="#" class="btn btn-danger">Edit</a>
-                    <a href="#" class="btn btn-danger">Delete</a>
-                    <a href="#" class="btn btn-danger">Upload</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-@endsection
+<li class="nav-item menu-items">
+    <a class="nav-link" href="/administrator">
+      <span class="menu-icon">
+        <i class="mdi mdi-account"></i>
+      </span>
+      <span class="menu-title">Admin</span>
+    </a>
+  </li>
+  <li class="nav-item menu-items">
+    <a class="nav-link" href="/pengguna">
+      <span class="menu-icon">
+        <i class="mdi mdi-account"></i>
+      </span>
+      <span class="menu-title">Pengguna</span>
+    </a>
+  </li>
+  </ul>
+  </nav>
+  
+  <style>
+  .sidebar-offcanvas {
+    background-color: #2f3640;
+    color: #fff;
+  }
+  
+  .sidebar.nav-item {
+    margin-bottom: 10px;
+  }
+  
+  .sidebar.nav-link {
+    color: #dcdde1;
+    padding: 10px 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .sidebar.nav-link:hover {
+    background-color: #4b6584;
+    color: #fff;
+  }
+  
+  .sidebar.menu-icon {
+    font-size: 18px;
+    margin-right: 10px;
+  }
+  
+  .sidebar.menu-title {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .profile-desc {
+    padding: 15px;
+  }
+  
+  .profile-pic.count {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 0;
+    right: 0;
+  }
+  
+  .profile-pic.count-indicator {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .profile-name {
+    display: inline-block;
+    margin-left: 10px;
+  }
+  
+  .dropdown-menu.preview-item {
+    padding: 10px 20px;
+  }
+  
+  .dropdown-menu.preview-item:hover {
+    background-color: #4b6584;
+    color: #fff;
+  }
+  
+  .dropdown-item.preview-icon {
+    width: 30px;
+    height: 30px;
+  }
+  </style>
