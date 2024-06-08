@@ -12,7 +12,7 @@
 Website Rental Mobil (Rent Car)
 
 ## ERD
-![assets\rentcar-erd.png](https://github.com/Rahmatulzamri/project_final/blob/main/assets/rentcar-erd.png)
+![assets\rentcar-erd.png](https://github.com/Rahmatulzamri/project_final/blob/main/assets/new-rentcar-erd.png)
 
 ## Link
 -- Not Available
