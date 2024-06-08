@@ -18,6 +18,7 @@
               <th> total denda</th>
               <th> status</th>
               <th> pelanggan id </th>
+              <th> mobil id </th>
               <th> admin id</th>
               <th> aksi </th>
             </tr>
@@ -32,6 +33,7 @@
               <td> {{$item->total_denda}} </td>
               <td> {{$item->status}} </td>
               <td> {{$item->pelanggan_id}} </td>
+              <td> {{$item->mobil_id}} </td>
               <td> {{$item->admin_id}} </td>
               <td>
                   <form action="/booking/{{$item->id}}" method="POST">

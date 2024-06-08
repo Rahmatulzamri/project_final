@@ -1,4 +1,5 @@
 @extends('layout.master')
+
 @section('isi')
 <div class="card">
     <div class="card-body">
@@ -35,6 +36,15 @@
                 </select>
             </div>
             <div class="form-group">
+                <label>Mobil</label>
+                <select name="mobil_id" class="form-control">
+                    <option value="">Pilih Mobil</option>
+                    @foreach($mobil as $car)
+                        <option value="{{ $car->id }}">{{ $car->merek->nama }}</option>
+                    @endforeach
+                </select>
+            </div>
+            <div class="form-group">
                 <label>Admin</label>
                 <select name="admin_id" class="form-control">
                     <option value="">Pilih Admin</option>
@@ -47,7 +57,7 @@
             <div class="text-danger">{{ $message }}</div>
             @enderror
             <button type="submit" class="btn btn-primary mr-2">Submit</button>
-            <button type="button" class="btn btn-dark">Cancel</button>
+            <a  href="{{route('booking.index')}}" class="btn btn-dark">Cancel</a>
         </form>
     </div>
 </div>

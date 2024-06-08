@@ -11,5 +11,5 @@ class booking extends Model
 
     protected $table = 'booking';
 
-    protected $fillable = ['id', 'tanggal_mulai','tanggal_selesai', 'total_harga', 'total_denda', 'status', 'pelanggan_id','admin_id'];
+    protected $fillable = ['id', 'tanggal_mulai','tanggal_selesai', 'total_harga', 'total_denda', 'status', 'pelanggan_id','mobil_id','admin_id'];
 }

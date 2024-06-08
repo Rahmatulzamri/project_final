@@ -37,6 +37,16 @@
                 </select>
             </div>
             <div class="form-group">
+                <label>Mobil</label>
+                <select name="mobil_id" class="form-control">
+                    @foreach($mobil as $m)
+                        <option value="{{ $m->id }}" {{ $booking->mobil_id == $m->id ? 'selected' : '' }}>
+                            {{ $m->merek->nama }}
+                        </option>
+                    @endforeach
+                </select>
+            </div>
+            <div class="form-group">
                 <label>Admin</label>
                 <select name="admin_id" class="form-control">
                     @foreach($admin as $a)
@@ -50,7 +60,7 @@
             <div class="text-danger">{{ $message }}</div>
             @enderror
             <button type="submit" class="btn btn-primary mr-2">Submit</button>
-            <button type="button" class="btn btn-dark">Cancel</button>
+            <a  href="{{route('booking.index')}}" class="btn btn-dark">Cancel</a>
         </form>
     </div>
 </div>
