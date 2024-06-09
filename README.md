@@ -13,7 +13,7 @@ SanberCode X Universitas Lancang Kuning
 Website Rental Mobil (Rent Car)
 
 ## ERD
-![assets\rentcar-erd.png](https://github.com/Rahmatulzamri/project_final/blob/main/assets/new-rentcar-erd.png)
+![assets\rentcar-erd.png](https://github.com/Rahmatulzamri/project_final/blob/main/assets/revisi-erd-rentcar.png)
 
 ## Link
 -- Not Available
