@@ -36,15 +36,15 @@
                         <td>
                             <form action="/pelanggan/{{ $item->id }}" method="POST" class="d-inline">
                                 <a href="{{ route('pelanggan.show', $item->id) }}" class="btn btn-info btn-sm" style="background-color: #3498db; border-color: #3498db;">
-                                    <i class="fas fa-info-circle"></i> Detail
+                                    <i class="fas fa-info-circle"></i> 
                                 </a>
                                 <a href="{{ route('pelanggan.edit', $item->id) }}" class="btn btn-warning btn-sm" style="background-color: #f39c12; border-color: #f39c12;">
-                                    <i class="fas fa-edit"></i> Perbaiki
+                                    <i class="fas fa-edit"></i> 
                                 </a>
                                 @csrf
                                 @method('DELETE')
                                 <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus item ini?')" style="background-color: #e74c3c; border-color: #e74c3c;">
-                                    <i class="fas fa-trash-alt"></i> Hapus
+                                    <i class="fas fa-trash-alt"></i> 
                                 </button>
                             </form>                                                  
                         </td>
