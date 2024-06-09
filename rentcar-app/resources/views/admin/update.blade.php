@@ -2,21 +2,20 @@
 @section('isi')
 <div class="card">
     <div class="card-body">
-      <h4 class="card-title">Tabel Create</h4>
+      <h4 class="card-title">Edit Data Administrator</h4>
       <form action="/administrator/{{$admin->id}}" method="POST" class="forms-sample">
         @csrf
         @method('put')
-      <form class="forms-sample">
         <div class="form-group">
-          <label>Nama</label>
+          <label for="nama">Nama</label> 
           <input name="nama" type="text" value="{{$admin->nama}}" class="form-control">
         </div>
         <div class="form-group">
-          <label>Email</label>
+          <label for="email">Email</label> 
           <input name="email" type="text" value="{{$admin->email}}" class="form-control">
         </div>
         <div class="form-group">
-          <label>Password</label>
+          <label for="password">Password</label>
           <input name="password" type="text" value="{{$admin->password}}" class="form-control">
         </div>
         @error('nama')
@@ -28,8 +27,12 @@
         @error('password')
         <div class="text-danger">{{ $message }}</div>
         @enderror
-        <button href="{{ route('administrator.index') }}"  type="submit" class="btn btn-primary mr-2">Submit</button>
-        <a  href="{{route('administrator.index')}}" class="btn btn-dark">Cancel</a>
+        <button type="submit" class="btn btn-primary mr-2">
+          <i class="fas fa-check"></i> Submit
+      </button>
+      <a href="{{ route('mobil.index') }}" class="btn btn-secondary">
+          <i class="fas fa-times"></i> Cancel
+      </a>      
       </form>
     </div>
   </div>

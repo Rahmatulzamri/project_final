@@ -5,7 +5,9 @@
     <div class="card-body">
         <h4 class="card-title">Table Pelanggan</h4>
         <p class="card-description">
-            <a href="/pelanggan/create"><button class="btn btn-primary">Tambah data</button></a>
+            <a href="/pelanggan/create" class="btn btn-primary">
+                <i class="fas fa-plus"></i> Tambah data
+            </a>
         </p>
         <div class="table-responsive">
             <table class="table table-striped table-bordered">
@@ -33,12 +35,18 @@
                         <td>{{ $item->nik }}</td>
                         <td>
                             <form action="/pelanggan/{{ $item->id }}" method="POST" class="d-inline">
-                                <a href="{{ route('pelanggan.show', $item->id) }}" class="btn btn-info btn-sm">Detail</a>
-                                <a href="{{ route('pelanggan.edit', $item->id) }}" class="btn btn-warning btn-sm">Perbaiki</a>
+                                <a href="{{ route('pelanggan.show', $item->id) }}" class="btn btn-info btn-sm" style="background-color: #3498db; border-color: #3498db;">
+                                    <i class="fas fa-info-circle"></i> Detail
+                                </a>
+                                <a href="{{ route('pelanggan.edit', $item->id) }}" class="btn btn-warning btn-sm" style="background-color: #f39c12; border-color: #f39c12;">
+                                    <i class="fas fa-edit"></i> Perbaiki
+                                </a>
                                 @csrf
                                 @method('DELETE')
-                                <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure?')">Delete</button>
-                            </form>
+                                <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus item ini?')" style="background-color: #e74c3c; border-color: #e74c3c;">
+                                    <i class="fas fa-trash-alt"></i> Hapus
+                                </button>
+                            </form>                                                  
                         </td>
                     </tr>
                     @endforeach

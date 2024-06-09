@@ -2,7 +2,7 @@
 @section('isi')
 <div class="card">
     <div class="card-body">
-      <h4 class="card-title">Tabel Create</h4>
+      <h4 class="card-title">Tambah Data Administrator</h4>
       <form action="{{ route('administrator.store') }}" method="POST" class="forms-sample">
         @csrf
       <form class="forms-sample">
@@ -27,8 +27,8 @@
         @error('password')
         <div class="text-danger">{{ $message }}</div>
         @enderror
-        <button href="{{ route('administrator.index') }}"  type="submit" class="btn btn-primary mr-2">Submit</button>
-        <a  href="{{route('administrator.index')}}" class="btn btn-dark">Cancel</a>
+        <button type="submit" class="btn btn-primary mr-2"><i class="bi bi-check"></i> Submit</button>
+        <a href="{{route('administrator.index')}}" class="btn btn-dark"><i class="bi bi-x"></i> Cancel</a>
       </form>
     </div>
   </div>
