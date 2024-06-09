@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
         <title>
-          
+          Rent Car App
         </title>
     <!-- plugins:css -->
     <link rel="stylesheet" href="{{ asset('admin/template/assets/vendors/mdi/css/materialdesignicons.min.css') }}">
@@ -30,7 +30,7 @@
         <!-- partial -->
         <div class="container-fluid page-body-wrapper">
           <!-- partial:partials/_navbar.html -->
-          @include('partial.navbar')
+          {{-- @include('partial.navbar') --}}
           <!-- partial -->
           <div class="main-panel">
             <div class="content-wrapper">
@@ -55,6 +55,8 @@
     <script src="{{ asset('admin/template/assets/js/todolist.js') }}"></script>
     <!-- Custom js for this page -->
     <script src="{{ asset('admin/template/assets/js/dashboard.js') }}"></script>
-
+@guest
+    a
+@endguest
 </body>
 </html>

@@ -12,8 +12,8 @@
             <li class="nav-item dropdown">
                 <a class="nav-link" id="profileDropdown" href="#" data-toggle="dropdown">
                     <div class="navbar-profile">
-                        <img class="img-xs rounded-circle" src="{{ asset('admin/template/assets/images/your-profile-picture.jpg')}}" alt="" style="width: 30px; height: 30px; border: 2px solid #fff;">
-                        <p class="mb-0 d-none d-sm-block navbar-profile-name" style="color: #fff; font-size: 16px;">Your Name</p>
+                        <img class="img-xs rounded-circle" src="{{ asset('admin/template/assets/images/Rent_Car.png')}}" alt="" style="width: 30px; height: 30px; border: 2px solid #fff;">
+                        <p class="mb-0 d-none d-sm-block navbar-profile-name" style="color: #fff; font-size: 16px;">Admin</p>
                         <i class="mdi mdi-menu-down d-none d-sm-block" style="color: #fff; font-size: 24px;"></i>
                     </div>
                 </a>
