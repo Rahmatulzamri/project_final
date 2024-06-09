@@ -62,3 +62,7 @@ Route::get('/about', function () {
     return view ('user.about');
 });
 
+
+Auth::routes();
+
+// Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
