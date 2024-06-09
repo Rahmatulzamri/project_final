@@ -5,7 +5,9 @@
     <div class="card-body">
         <h4 class="card-title">Tabel Booking</h4>
         <p class="card-description">
-            <a href="{{ route('booking.create') }}"><button class="btn btn-primary">Tambah data</button></a>
+            <a href="{{ route('booking.create') }}" class="btn btn-primary">
+                <i class="fas fa-plus"></i> Tambah data
+            </a>
         </p>
         <div class="table-responsive">
             <table class="table table-dark table-striped">
@@ -37,11 +39,16 @@
                         <td>{{ $item->admin_id }}</td>
                         <td>
                             <form action="/booking/{{ $item->id }}" method="POST" class="d-inline">
-                                <a href="/booking/{{ $item->id }}/edit" class="btn btn-warning btn-sm">Edit</a>
+                                <a href="/booking/{{ $item->id }}/edit" class="btn btn-warning btn-sm">
+                                    <i class="fas fa-edit"></i> Edit
+                                </a>
                                 @csrf
                                 @method("DELETE")
-                                <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this item?');">Delete</button>
+                                <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Are you sure you want to delete this item?');">
+                                    <i class="fas fa-trash-alt"></i> Delete
+                                </button>
                             </form>
+                            
                         </td>
                     </tr>
                     @endforeach
@@ -49,18 +56,11 @@
             </table>
         </div>
 
-        <!-- Container for the large calendar -->
         <div id="large-calendar" class="mt-4"></div>
     </div>
 </div>
 
-<!-- FullCalendar CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.5/index.global.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-<!-- FullCalendar JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fullcalendar/6.1.5/index.global.min.js" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-<!-- Custom CSS for FullCalendar -->
 <style>
     body {
         background-color: #121212;

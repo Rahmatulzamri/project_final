@@ -32,24 +32,10 @@ Route::get('/register', function () {
 Route::resource('/pelanggan', pelangganController::class );
 Route::get('/pelanggan/{id}/edit', [pelangganController::class, 'edit'])->name('pelanggan.edit');
 Route::get('/pelanggan/{id}/show', [pelangganController::class, 'show'])->name('pelanggan.show');
-// Route::resource('/book', BookController::class);
-
-// Route::get('/book', [BookController::class, 'index'])->name('book.index');
-// Route::get('/book/create', [BookController::class, 'create'])->name('book.create');
-// Route::post('/book', [BookController::class, 'store'])->name('book.store');
-// Route::put('/book/{id}/edit', [BookController::class, 'edit'])->name('book.edit');
-// Route::put('/book/{id}', [BookController::class, 'update'])->name('book.update');
-// Route::put('/book/{id}', [BookController::class, 'destroy'])->name('book.destroy');
-
 Route::resource('/booking', BookingController::class );
 Route::resource('/mobil', MobilController::class );
-
 Route::resource('/pengguna', penggunaController::class );
-
-// admin
 Route::resource('/administrator', AdminController::class);
-
-
 Route::get('/dtpelanggan', function () {
     return view ('layout.pelanggan.index');
 });

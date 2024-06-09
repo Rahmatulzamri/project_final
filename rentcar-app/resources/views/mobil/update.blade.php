@@ -43,8 +43,13 @@
             @error('nama')
             <div class="text-danger">{{ $message }}</div>
             @enderror
-            <button type="submit" class="btn btn-primary mr-2">Submit</button>
-            <a  href="{{route('mobil.index')}}" class="btn btn-dark">Cancel</a>
+            <button type="submit" class="btn btn-primary mr-2">
+                <i class="fas fa-check"></i> Submit
+            </button>
+            <a href="{{ route('mobil.index') }}" class="btn btn-secondary">
+                <i class="fas fa-times"></i> Cancel
+            </a>
+            
         </form>
     </div>
 </div>

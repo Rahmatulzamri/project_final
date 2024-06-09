@@ -41,8 +41,9 @@
             @error('tanggal_mulai')
             <div class="text-danger">{{ $message }}</div>
             @enderror
-            <button type="submit" class="btn btn-primary mr-2">Submit</button>
-            <a  href="{{route('mobil.index')}}" class="btn btn-dark">Cancel</a>
+            <button href="{{ route('merek.index') }}"  type="submit" class="btn btn-primary mr-2">Submit</button>
+            <button class="btn btn-dark">Cancel</button>
+            </a>            
         </form>
     </div>
 </div>

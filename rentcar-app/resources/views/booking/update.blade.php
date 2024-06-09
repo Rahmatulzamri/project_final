@@ -80,8 +80,13 @@
                 <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
-            <button type="submit" class="btn btn-primary mr-2">Submit</button>
-            <a href="{{ route('booking.index') }}" class="btn btn-secondary">Cancel</a>
+            <button type="submit" class="btn btn-primary mr-2">
+                <i class="fas fa-check"></i> Submit
+            </button>
+            <a href="{{ route('booking.index') }}" class="btn btn-secondary">
+                <i class="fas fa-times"></i> Cancel
+            </a>
+            
         </form>
     </div>
 </div>
