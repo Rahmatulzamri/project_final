@@ -7,6 +7,7 @@ use App\Http\Controllers\ReservasiController;
 use App\Http\Controllers\BookcarController;
 use App\Http\Controllers\BookingController;
 use App\Http\Controllers\merekController;
+use App\Http\Controllers\MobilController;
 use App\Http\Controllers\pelangganController;
 use App\Http\Controllers\penggunaController;
 use App\Http\Controllers\AdminController;
@@ -41,6 +42,7 @@ Route::get('/pelanggan/{id}/show', [pelangganController::class, 'show'])->name('
 // Route::put('/book/{id}', [BookController::class, 'destroy'])->name('book.destroy');
 
 Route::resource('/booking', BookingController::class );
+Route::resource('/mobil', MobilController::class );
 
 Route::resource('/pengguna', penggunaController::class );
 

@@ -13,16 +13,13 @@ return new class extends Migration
     {
         Schema::create('mobil', function (Blueprint $table) {
             $table->id();
-            $table->string('merek');
+            $table->unsignedBigInteger('merek_id');
             $table->string('model');
-            $table->integer('tahun');
+            $table->date('tahun');
             $table->string('warna');
             $table->string('no_pol');
             $table->string('status');
             $table->string('harga_sewa');
-            $table->unsignedBigInteger('booking_id');
-            $table->foreign('booking_id')->references('id')->on('booking');
-            $table->unsignedBigInteger('merek_id');
             $table->foreign('merek_id')->references('id')->on('merek');
             $table->timestamps();
         });

@@ -11,7 +11,7 @@ class Mobil extends Model
 
     protected $table='mobil';
 
-    protected $fillable=['id','merek','tahun','warna','no_pol','status'];
+    protected $fillable=['id','merek_id','model','tahun','warna','no_pol','status','harga_sewa'];
 
     /**
      * Get the merek that owns the mobil.
@@ -24,5 +24,10 @@ class Mobil extends Model
     public function isAvailable()
     {
         return $this->status === 'available';
+    }
+
+    public function merek()
+    {
+        return $this->belongsTo(Merek::class);
     }
 }

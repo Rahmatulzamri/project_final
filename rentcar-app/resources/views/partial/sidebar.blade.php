@@ -90,6 +90,14 @@
             </a>
         </li>
         <li class="nav-item menu-items">
+            <a class="nav-link" href="/mobil">
+                <span class="menu-icon">
+                    <i class="mdi mdi-calendar-multiple-check"></i>
+                </span>
+                <span class="menu-title">Mobil</span>
+            </a>
+        </li>
+        <li class="nav-item menu-items">
             <a class="nav-link" href="/administrator">
                 <span class="menu-icon">
                     <i class="mdi mdi-account"></i>

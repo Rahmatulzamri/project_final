@@ -15,15 +15,18 @@ return new class extends Migration
             $table->id();
             $table->date('tanggal_mulai');
             $table->date('tanggal_selesai');
-            $table->string('total_harga');
-            $table->string('total_denda');
+            $table->decimal('total_harga', 10, 2);
+            $table->decimal('total_denda', 10, 2);
             $table->string('status');
             $table->unsignedBigInteger('pelanggan_id');
-            $table->foreign('pelanggan_id')->references('id')->on('pelanggan');
             $table->unsignedBigInteger('admin_id');
-            $table->foreign('admin_id')->references('id')->on('admin');
-
+            $table->unsignedBigInteger('mobil_id');
             $table->timestamps();
+
+            // Define foreign keys
+            $table->foreign('pelanggan_id')->references('id')->on('pelanggan')->onDelete('cascade');
+            $table->foreign('admin_id')->references('id')->on('admin')->onDelete('cascade');
+            $table->foreign('mobil_id')->references('id')->on('mobil')->onDelete('cascade');
         });
     }
 
