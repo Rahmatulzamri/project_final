@@ -109,7 +109,7 @@
                 <span class="menu-icon">
                     <i class="mdi mdi-account"></i>
                 </span>
-                <span class = "menu-title">Pengguna</span>
+                <span class = "menu-title">Pengguna View</span>
             </a>
         </li>
         @auth

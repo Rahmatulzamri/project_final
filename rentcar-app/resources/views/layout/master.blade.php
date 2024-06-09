@@ -27,25 +27,27 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
 </head>
+@auth
+    
 <body>
-    <div class="container-scroller">
-        <!-- partial:partials/_sidebar.html -->
-        @include('partial.sidebar')
-        <!-- partial -->
-        <div class="container-fluid page-body-wrapper">
-          <!-- partial:partials/_navbar.html -->
-          {{-- @include('partial.navbar') --}}
-          <!-- partial -->
-          <div class="main-panel">
-            <div class="content-wrapper">
-              <div class="container">
-                @yield('isi')
-              </div>
-          </div>
+  <div class="container-scroller">
+    <!-- partial:partials/_sidebar.html -->
+    @include('partial.sidebar')
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:partials/_navbar.html -->
+      {{-- @include('partial.navbar') --}}
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="container">
+            @yield('isi')
+            </div>
+            </div>
         </div>
         <!-- page-body-wrapper ends -->
         </div>
-    <!-- plugins:js -->
+        <!-- plugins:js -->
     <script src="{{ asset('admin/template/assets/vendors/js/vendor.bundle.base.js') }}"></script>
     <!-- Plugin js for this page -->
     <script src="{{ asset('admin/template/assets/vendors/chart.js/Chart.min.js') }}"></script>
@@ -59,8 +61,15 @@
     <script src="{{ asset('admin/template/assets/js/todolist.js') }}"></script>
     <!-- Custom js for this page -->
     <script src="{{ asset('admin/template/assets/js/dashboard.js') }}"></script>
-@guest
-    a
+    
+    @endauth
+
+    @guest
+{{-- Kalau Guest otomatis masuk /pengguna --}}
+<script>
+  window.location.href = "/pengguna";
+</script>
 @endguest
-</body>
-</html>
+    </body>
+    </html>
+    

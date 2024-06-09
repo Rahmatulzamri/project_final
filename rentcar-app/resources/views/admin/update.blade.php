@@ -7,8 +7,8 @@
         @csrf
         @method('put')
         <div class="form-group">
-          <label for="nama">Nama</label> 
-          <input name="nama" type="text" value="{{$admin->nama}}" class="form-control">
+          <label for="name">Nama</label> 
+          <input name="namea" type="text" value="{{$admin->name}}" class="form-control">
         </div>
         <div class="form-group">
           <label for="email">Email</label> 

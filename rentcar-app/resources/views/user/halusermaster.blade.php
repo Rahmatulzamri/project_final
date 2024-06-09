@@ -66,6 +66,7 @@
                   <li><a href="/cars" class="nav-link">Cars</a></li>
                   <li><a href="/about" class="nav-link">About</a></li>
                   <li><a href="/contact" class="nav-link">Contact</a></li>
+                  <li><a href="/login" class="nav-link">Admin</a></li>
                 </ul>
               </nav>
             </div>

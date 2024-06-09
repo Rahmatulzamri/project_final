@@ -65,7 +65,7 @@
                 <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
             </div>
-            <div class="form-group">
+            {{-- <div class="form-group">
                 <label for="admin_id">Admin</label>
                 <select name="admin_id" class="form-control @error('admin_id') is-invalid @enderror" id="admin_id">
                     <option value="">Pilih Admin</option>
@@ -76,7 +76,7 @@
                 @error('admin_id')
                 <div class="invalid-feedback">{{ $message }}</div>
                 @enderror
-            </div>
+            </div> --}}
             <button type="submit" class="btn btn-primary mr-2">
                 <i class="fas fa-check"></i> Submit
             </button>

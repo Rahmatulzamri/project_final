@@ -21,13 +21,13 @@ class AdminController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'nama' => 'required',
+            'name' => 'required',
             'email' => 'required',
             'password' => 'required',
         ]);
 
         $admin = new admin;
-        $admin->nama = $request->input('nama');
+        $admin->name = $request->input('name');
         $admin->email = $request->input('email');
         $admin->password = $request->input('password');
         $admin->save();
@@ -51,7 +51,7 @@ class AdminController extends Controller
     {
     
         $request->validate([
-            'nama' => 'required',
+            'name' => 'required',
             'email' => 'required',
             'password' => 'required',
         ]);
@@ -59,7 +59,7 @@ class AdminController extends Controller
         admin::where('id',$id)
         ->update(
             [
-                'nama' => $request->input('nama'),
+                'name' => $request->input('name'),
                 'email' => $request->input('email'),
                 'password' => $request->input('password'),
             ]

@@ -8,7 +8,7 @@
       <form class="forms-sample">
         <div class="form-group">
           <label>Nama</label>
-          <input name="nama" type="text" class="form-control" placeholder="masukkan nama">
+          <input name="name" type="text" class="form-control" placeholder="masukkan nama">
         </div>
         <div class="form-group">
           <label>Email</label>
