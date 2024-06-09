@@ -50,4 +50,29 @@ Route::resource('/pengguna', penggunaController::class );
 Route::resource('/administrator', AdminController::class);
 
 
+Route::get('/dtpelanggan', function () {
+    return view ('layout.pelanggan.index');
+});
+
+Route::get('/cars', function () {
+    return view ('user.cars');
+});
+
+Route::get('/pelangganbos', function () {
+    return view ('layout.pelanggan.buatuser');
+});
+
+Route::get('/homeuser', function () {
+    return view ('user.halusermaster');
+});
+
+
+Route::get('/contact', function () {
+    return view ('user.contact');
+});
+
+
+Route::get('/about', function () {
+    return view ('user.about');
+});
 

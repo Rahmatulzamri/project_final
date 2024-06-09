@@ -21,9 +21,6 @@
     <!-- MAIN CSS -->
     <link rel="stylesheet" href="{{ asset('haluser/css/style.css')}}">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
-
   </head>
 
   <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
@@ -62,8 +59,8 @@
 
               <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
                 <ul class="site-menu main-menu js-clone-nav ml-auto ">
-                  <li class="active"><a href="/homeuser" class="nav-link">Home</a></li>
-                  <li><a href="/cars" class="nav-link">Cars</a></li>
+                  <li><a href="/homeuser" class="nav-link">Home</a></li>
+                  <li class="active"><a href="/cars" class="nav-link">Cars</a></li>
                   <li><a href="/about" class="nav-link">About</a></li>
                   <li><a href="/contact" class="nav-link">Contact</a></li>
                 </ul>
@@ -77,94 +74,27 @@
       </header>
 
     <div class="ftco-blocks-cover-1">
-      <div class="ftco-cover-1 overlay" style="background-image: url('haluser/images/backg.png')">
+      <div class="ftco-cover-1 overlay innerpage" style="background-image: url('haluser/images/backg.png')">
         <div class="container">
-          {{-- <div class="row align-items-center"> --}}
-            {{-- <div class="col-lg-5">
-              <div class="feature-car-rent-box-1">
-                <h3>Range Rover S7</h3>
-                <ul class="list-unstyled">
-                  <li>
-                    <span>Doors</span>
-                    <span class="spec">4</span>
-                  </li>
-                  <li>
-                    <span>Seats</span>
-                    <span class="spec">6</span>
-                  </li>
-                  <li>
-                    <span>Lugage</span>
-                    <span class="spec">2 Suitcase/2 Bags</span>
-                  </li>
-                  <li>
-                    <span>Transmission</span>
-                    <span class="spec">Automatic</span>
-                  </li>
-                  <li>
-                    <span>Minium age</span>
-                    <span class="spec">Automatic</span>
-                  </li>
-                </ul>
-                <div class="d-flex align-items-center bg-light p-3">
-                  <span>$150/day</span>
-                  <a href="contact.html" class="ml-auto btn btn-primary">Rent Now</a>
-                </div>
-              </div>
+          <div class="row align-items-center justify-content-center">
+            <div class="col-lg-6 text-center">
+              <h1>Layanan Rental Mobil</h1>
+              <p>Kami menawarkan mobil-mobil bersih dan terawat untuk disewa, siap untuk menemani setiap perjalanan Anda. Pesan mobil dengan mudah dan nikmati kenyamanan serta keamanan selama berkendara dengan layanan profesional kami.</p>
             </div>
-          </div> --}}
+          </div>
         </div>
       </div>
     </div>
-
-    <div class="site-section pt-0 pb-0 bg-light">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            
-              <form class="trip-form">
-                <div class="row align-items-center mb-4">
-                  <div class="col-md-6">
-                    <h3 class="m-0">Sewa Mobil Nyaman dan Aman</h3><br>
-                    <p>Ingin Perjalanan Tanpa Ribet? Sewa Mobil Bersih dan Nyaman di Sini!
-                      Nikmati perjalanan Anda dengan mobil yang selalu dalam kondisi prima dan terawat. Pesan sekarang dan rasakan kemudahan serta kenyamanannya!</p>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-lg-6">
-                    <a href="/pelangganbos" class="btn btn-primary" role="button">Booking</a>
-                  </div>                  
-                </div>
-              </form>
-            </div>
-        </div>
-      </div>
-    </div>
-
     
-
     <div class="site-section bg-light">
       <div class="container">
         <div class="row">
-          <div class="col-lg-3">
-            <h3>Pilihan Mobil Terbaik</h3>
-            <p class="mb-4">Temukan mobil yang sesuai dengan kebutuhan Anda. Kami memiliki 32 mobil yang tersedia, dengan pilihan yang beragam dan harga yang kompetitif</p>
-            <p>
-              <a href="#" class="btn btn-primary custom-prev">Previous</a>
-              <span class="mx-2">/</span>
-              <a href="#" class="btn btn-primary custom-next">Next</a>
-            </p>
-          </div>
-          <div class="col-lg-9">
-
-
-
-
-            <div class="nonloop-block-13 owl-carousel">
-              <div class="item-1">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="item-1">
                 <a href="#"><img src="haluser/images/pajero.jpg" alt="Image" class="img-fluid"></a>
                 <div class="item-1-contents">
                   <div class="text-center">
-                  <h3><a href="#">pajero</a></h3>
+                  <h3><a href="#">Pajero</a></h3>
                   <div class="rating">
                     <span class="icon-star text-warning"></span>
                     <span class="icon-star text-warning"></span>
@@ -189,13 +119,123 @@
                     </li>
                   </ul>
                   <div class="d-flex action">
-                    <a href="/pelangganbos" class="btn btn-primary" role="button">Booking</a>
-                  </div>   
+                    <a href="/pelangganbos" class="btn btn-primary">Booking</a>
+                  </div>
                 </div>
               </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="item-1">
+                <a href="#"><img src="haluser/images/alphard.jpg" alt="Image" class="img-fluid"></a>
+                <div class="item-1-contents">
+                  <div class="text-center">
+                  <h3><a href="#">Alphard</a></h3>
+                  <div class="rating">
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                  </div>
+                  <div class="rent-price"><span>Rp800.000/</span>day</div>
+                  </div>
+                  <ul class="specs">
+                    <li>
+                      <span>Doors</span>
+                      <span class="spec">4</span>
+                    </li>
+                    <li>
+                      <span>Seats</span>
+                      <span class="spec">5</span>
+                    </li>
+                    <li>
+                      <span>Transmission</span>
+                      <span class="spec">Automatic</span>
+                    </li>
+                  </ul>
+                  <div class="d-flex action">
+                    <a href="/pelangganbos" class="btn btn-primary">Booking</a>
+                  </div>
+                </div>
+              </div>
+          </div>
 
 
-              <div class="item-1">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="item-1">
+                <a href="#"><img src="haluser/images/brio.jpg" alt="Image" class="img-fluid"></a>
+                <div class="item-1-contents">
+                  <div class="text-center">
+                  <h3><a href="#">Brio</a></h3>
+                  <div class="rating">
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                  </div>
+                  <div class="rent-price"><span>Rp450.000/</span>day</div>
+                  </div>
+                  <ul class="specs">
+                    <li>
+                      <span>Doors</span>
+                      <span class="spec">4</span>
+                    </li>
+                    <li>
+                      <span>Seats</span>
+                      <span class="spec">5</span>
+                    </li>
+                    <li>
+                      <span>Transmission</span>
+                      <span class="spec">Automatic</span>
+                    </li>
+                  </ul>
+                  <div class="d-flex action">
+                    <a href="/pelangganbos" class="btn btn-primary">Booking</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="item-1">
+                <a href="#"><img src="haluser/images/terios.jpg" alt="Image" class="img-fluid"></a>
+                <div class="item-1-contents">
+                  <div class="text-center">
+                  <h3><a href="#">Terios</a></h3>
+                  <div class="rating">
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                    <span class="icon-star text-warning"></span>
+                  </div>
+                  <div class="rent-price"><span>Rp300.000/</span>day</div>
+                  </div>
+                  <ul class="specs">
+                    <li>
+                      <span>Doors</span>
+                      <span class="spec">4</span>
+                    </li>
+                    <li>
+                      <span>Seats</span>
+                      <span class="spec">5</span>
+                    </li>
+                    <li>
+                      <span>Transmission</span>
+                      <span class="spec">Manual</span>
+                    </li>
+                  </ul>
+                  <div class="d-flex action">
+                    <a href="/pelangganbos" class="btn btn-primary">Booking</a>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="item-1">
                 <a href="#"><img src="haluser/images/calya.jpg" alt="Image" class="img-fluid"></a>
                 <div class="item-1-contents">
                   <div class="text-center">
@@ -207,11 +247,11 @@
                     <span class="icon-star text-warning"></span>
                     <span class="icon-star text-warning"></span>
                   </div>
-                  <div class="rent-price"><span>Rp250.000/</span>day</div>
+                  <div class="rent-price"><span>Rp200.000/</span>day</div>
                   </div>
                   <ul class="specs">
                     <li>
-                      <span>Pintu</span>
+                      <span>Doors</span>
                       <span class="spec">4</span>
                     </li>
                     <li>
@@ -222,19 +262,21 @@
                       <span>Transmission</span>
                       <span class="spec">Automatic</span>
                     </li>
-
                   </ul>
                   <div class="d-flex action">
-                    <a href="contact.html" class="btn btn-primary">Booking</a>
+                    <a href="/pelangganbos" class="btn btn-primary">Booking</a>
                   </div>
                 </div>
               </div>
+          </div>
 
-              <div class="item-1">
-                <a href="#"><img src="haluser/images/xpander.jpg" alt="Image" class="img-fluid"></a>
+
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="item-1">
+                <a href="#"><img src="haluser/images/kijang.jpg" alt="Image" class="img-fluid"></a>
                 <div class="item-1-contents">
                   <div class="text-center">
-                  <h3><a href="#">Xpander</a></h3>
+                  <h3><a href="#">Kijang</a></h3>
                   <div class="rating">
                     <span class="icon-star text-warning"></span>
                     <span class="icon-star text-warning"></span>
@@ -242,11 +284,11 @@
                     <span class="icon-star text-warning"></span>
                     <span class="icon-star text-warning"></span>
                   </div>
-                  <div class="rent-price"><span>Rp400.000/</span>day</div>
+                  <div class="rent-price"><span>Rp650.000/</span>day</div>
                   </div>
                   <ul class="specs">
                     <li>
-                      <span>Pintu</span>
+                      <span>Doors</span>
                       <span class="spec">4</span>
                     </li>
                     <li>
@@ -257,20 +299,25 @@
                       <span>Transmission</span>
                       <span class="spec">Automatic</span>
                     </li>
-                    
                   </ul>
                   <div class="d-flex action">
                     <a href="contact.html" class="btn btn-primary">Booking</a>
                   </div>
                 </div>
               </div>
+          </div>
 
-            </div>
-            
+
+          <div class="col-12">
+            <span class="p-3">1</span>
+            <a href="#" class="p-3">2</a>
+            <a href="#" class="p-3">3</a>
+            <a href="#" class="p-3">4</a>
           </div>
         </div>
       </div>
     </div>
+
 
     <div class="container site-section mb-5">
       <div class="row justify-content-center text-center">
@@ -303,74 +350,6 @@
 
       </div>
     </div>
-
-
-    <div class="site-section bg-light">
-      <div class="container">
-        <div class="row justify-content-center text-center mb-5">
-          <div class="col-7 text-center mb-1">
-            <h2>RENTAL ZONE</h2>
-          </div>
-          <div class="container mt-5">
-            <table class="table table-bordered">
-                <thead>
-                    <tr>
-                        <th>NO</th>
-                        <th>Nama Kota</th>
-                        <th>Jarak Tempuh</th>
-                        <th>Jam ke Tujuan</th>
-                        <th>Lokasi</th>  
-                    </tr>
-                </thead>
-                <tbody id="table-body">
-                    <tr data-lat="1.4803" data-lng="102.1317">
-                        <td></td>
-                        <td>Bengkalis</td>
-                        <td class="text-right">189,1 km</td>
-                        <td class="text-right font-weight-medium">5 jam 16 mnt</td>
-                        <td><a href="#" target="_blank" class="btn btn-primary">Lokasi</a></td> 
-                    </tr>
-                    <tr data-lat="0.3538" data-lng="100.2257">
-                        <td></td>
-                        <td>Kampar</td>
-                        <td class="text-right">82,2 km</td>
-                        <td class="text-right font-weight-medium">2 jam 17 mnt</td>
-                        <td><a href="#" target="_blank" class="btn btn-primary">Lokasi</a></td> 
-                    </tr>
-                    <tr data-lat="2.1089" data-lng="100.8136">
-                        <td></td>
-                        <td>Rokan Hilir</td>
-                        <td class="text-right">199,4 km</td>
-                        <td class="text-right font-weight-medium">3 jam 31 mnt</td>
-                        <td><a href="#" target="_blank" class="btn btn-primary">Lokasi</a></td> 
-                    </tr>
-                    <tr data-lat="0.7198" data-lng="101.5207">
-                        <td></td>
-                        <td>Perawang</td>
-                        <td class="text-right">43,8 km</td>
-                        <td class="text-right font-weight-medium">1 jam 1 mnt</td>
-                        <td><a href="#" target="_blank" class="btn btn-primary">Lokasi</a></td> 
-                    </tr>
-                    <script>
-                      document.addEventListener('DOMContentLoaded', function() {
-                          var tableBody = document.getElementById('table-body');
-                          var rows = tableBody.getElementsByTagName('tr');
-                          for (var i = 0; i < rows.length; i++) {
-                              rows[i].getElementsByTagName('td')[0].innerText = i + 1;
-                              var lat = rows[i].getAttribute('data-lat');
-                              var lng = rows[i].getAttribute('data-lng');
-                              var link = rows[i].getElementsByTagName('a')[0];
-                              link.href = `https://www.google.com/maps/search/?api=1&query=${lat},${lng}`;
-                          }
-                      });
-                  </script>
-                </tbody>
-            </table>
-        </div>
-        </div>
-      </div>
-    </div>
-
     
 
     <footer class="site-footer">
@@ -457,3 +436,4 @@
   </body>
 
 </html>
+
